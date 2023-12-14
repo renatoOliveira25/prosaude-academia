@@ -1,4 +1,4 @@
-class Treino {
+export class Treino {
     constructor(id, idAluno, idProfessor, idAparelho, exercicio, regiaoCorpo) {
         this.id = id;
         this.idAluno = idAluno;

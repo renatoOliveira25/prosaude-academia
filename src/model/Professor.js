@@ -1,6 +1,6 @@
-import { Pessoa } from "./Pessoa";
+import { Pessoa } from "./Pessoa.js";
 
-class Professor extends Pessoa {
+export class Professor extends Pessoa {
     constructor(id, nome, cpf, dataNascimento, telefone, endereco, email, dataContratacao, formacao, especialidade) {
         super(id, nome, cpf, dataNascimento, telefone, endereco, email);
         this.dataContratacao = dataContratacao;

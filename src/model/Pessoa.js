@@ -1,6 +1,5 @@
 export class Pessoa {
-    constructor(id, nome, cpf, dataNascimento, telefone, endereco, email) {
-        this.id = id;
+    constructor(nome, cpf, dataNascimento, telefone, endereco, email) {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;

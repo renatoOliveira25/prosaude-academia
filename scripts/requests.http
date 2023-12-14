@@ -1,0 +1,23 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/consulta-aluno
+
+###
+
+POST http://localhost:3000/cadastro-aluno
+Content-Type: application/json
+
+{
+    "nome": "José da Silva",
+    "cpf": "123.456.789-00",
+    "dataNascimento": "01/01/2000",
+    "telefone": "1234567890",
+    "endereco": "Rua exemplo, 123",
+    "email": "email@exemplo.com",
+    "altura": 175,
+    "peso": 70
+}
+
+###

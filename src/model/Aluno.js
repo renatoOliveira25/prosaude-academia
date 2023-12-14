@@ -1,11 +1,10 @@
-import { Pessoa } from "./Pessoa";
+import { Pessoa } from "./Pessoa.js";
 
-class Aluno extends Pessoa {
-    constructor(id, nome, cpf, dataNascimento, telefone, endereco, email, altura, peso, imc) {
-        super(id, nome, cpf, dataNascimento, telefone, endereco, email);
+export class Aluno extends Pessoa {
+    constructor(nome, cpf, dataNascimento, telefone, endereco, email, altura, peso) {
+        super(nome, cpf, dataNascimento, telefone, endereco, email);
         this.altura = altura;
         this.peso = peso;
-        this.imc = imc;
     }
 
     get altura() {
@@ -31,6 +30,7 @@ class Aluno extends Pessoa {
     }
 
     calcularImc() {
-        return this._peso / (this._altura ** 2);
+        const alturaEmMetros = this.altura / 100; // Convertendo altura para metros
+        return this.peso / (alturaEmMetros * alturaEmMetros);
     }
 }

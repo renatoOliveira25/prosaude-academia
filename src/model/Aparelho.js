@@ -1,4 +1,4 @@
-class Aparelho {
+export class Aparelho {
     constructor(id, nome, musculoAtivado) {
         this.id = id;
         this.nome = nome;
